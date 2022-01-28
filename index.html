@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up / Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sign_in_container">
+        <div class="form__container signup__container">
+          <h1 class="form__title">Sign Up</h1>
+          <form class="form signup__form">
+            <div class="form__input">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="form__input">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                required
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="form__input">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                required
+                placeholder="Password"
+              />
+            </div>
+
+            <button class="form__btns signup__btn" type="submit">
+              Let's go
+            </button>
+          </form>
+
+          <p class="from__switch--text">
+            Already have an account? <span class="signin_text">Sign in</span>
+          </p>
+        </div>
+
+        <div class="form__container signin__container">
+          <h1 class="form__title">Login</h1>
+          <form class="form login__form">
+            <div class="form__input">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                placeholder="Username"
+              />
+            </div>
+            <div class="form__input">
+              <i class="fas fa-lock"></i>
+              <input
+                type="text"
+                name="password"
+                required
+                placeholder="Password"
+              />
+            </div>
+
+            <button class="form__btns login__btn" type="submit">Log in</button>
+          </form>
+          <p class="from__switch--text">
+            Don't have an account? <span class="signup_text">Sign up</span>
+          </p>
+        </div>
+        <!-- Switching Between forms -->
+        <div class="panels__container">
+          <div class="panel right__panel">
+            <h1 class="panel__title">New to the Bank?</h1>
+            <p class="panel__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              consectetur itaque repellat, quam natus quisquam rerum fugit
+              dolore dignissimos inventore?
+            </p>
+
+            <a href="#none" class="form__btns panel__right--btn">Sign up</a>
+
+            <div class="panel__image">
+              <img
+                src="assets/signup picture.svg"
+                alt="Login"
+                class="panel__img"
+              />
+            </div>
+          </div>
+          <div class="panel left__panel">
+            <h1 class="panel__title">Member of the Bank?</h1>
+            <p class="panel__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laudantium eos ipsam nemo. Hic aperiam ipsum blanditiis incidunt
+              ratione atque similique!
+            </p>
+
+            <a href="#none" class="form__btns panel__left--btn">Sign in</a>
+
+            <div class="panel__image">
+              <img
+                src="./assets/login picture.svg"
+                alt="Login"
+                class="panel__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
